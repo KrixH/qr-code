@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 400px;
+    width: 90%;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Távolság a gombok között */
+    margin-top: 20px; /* Tér a gombok és az input mező között */
+}
+
+.generate-button, .download-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff; /* Kék háttérszín */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    display: inline-block;
+}
+
+.generate-button:hover, .download-button:hover {
+    background-color: #0056b3; /* Sötétebb kék háttérszín hover állapotban */
+}
+
+.download-button {
+    display: none; /* Kezdetben elrejtjük */
+}
+
+.qr-code-section {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Tér a QR kód és a gombok között */
+    text-align: center; /* QR kód középre igazítása */
+}
