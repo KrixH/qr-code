@@ -32,19 +32,3 @@ function generateQR() {
     qrCodeSection.style.justifyContent = 'center';
     qrCodeSection.style.alignItems = 'center';
 }
-
-
-// Ellenőrizzük a felhasználó nyelvét
-var userLang = navigator.language || navigator.userLanguage;
-
-// Ha a nyelv magyar, és nem vagyunk már magyar oldalon, irányítsunk át magyarra
-if (userLang.startsWith('hu') && !window.location.href.includes('index.html')) {
-    console.log("Felhasználó nyelve: magyar");
-    window.location.href = 'index.html'; // Magyar oldal URL-je
-} else if (!userLang.startsWith('hu') && !window.location.href.includes('index_en.html')) {
-    console.log("Felhasználó nyelve: " + userLang);
-    window.location.href = 'index_en.html'; // Angol oldal URL-je
-}
-
-
-
