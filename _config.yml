@@ -1,0 +1,9 @@
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: /qr-code/
+redirects:
+  - from: /index.html
+    to: /qr-code
